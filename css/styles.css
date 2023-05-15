@@ -1,0 +1,223 @@
+/* 
+Global Styles 
+-----------------------------------------------------
+*/
+@font-face {
+    font-family: Caveat;
+    src: url(/src/Caveat/Caveat-VariableFont_wght.ttf);
+}    
+@font-face {
+    font-family: Montserrat;
+    src: url(/src/Montserrat-VariableFont_wght.ttf);
+} 
+@font-face {
+    font-family: Adoreyou;
+    src: url(/src/FontsFree-Net-a627d88a-c97f-4f25-bb0a-61e149cb85ac.ttf);
+}
+@font-face {
+    font-family: Wisdom;
+    size-adjust: 150%;
+    src: url(/src/WisdomVacation.ttf);
+}
+@font-face {
+    font-family: Spring;
+    src: url(/src/Springlake.ttf);  
+}
+
+@font-face {
+    font-family: Demo;
+    src: url(/src/SenjakalaDemoBold.ttf);  
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3FEF3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 70px;
+    font-family: "Wisdom", cursive;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Spring', cursive;
+    margin: 0;
+}
+
+img {
+    width: 300px;
+}
+
+.side-wrapper {
+    max-width: 200px;
+    width: 150px;
+    margin: 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.content-wrapper {
+    max-width: 600px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+}
+/* 
+Header Styles 
+-----------------------------------------------------
+*/
+header {
+    grid-column: 1/4;
+    margin-bottom: 5px;
+    background-color: #008F70;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#avatar {
+    border: 1px solid #3b444e; 
+    width: 12em;
+    height: 12em;
+    border-radius: 90%;
+}
+.description {
+    margin-left: 2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 890px) {
+    #avatar {
+        width: 9em;
+        height: 9em;
+    }
+    .description {
+        margin-left: 8px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .about-me{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width: 540px) {
+    #avatar {
+        width: 7em;
+        height: 7em;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+/* 
+Navbar Styles 
+-----------------------------------------------------
+*/
+nav {
+    grid-column: 1/2;
+    justify-content: flex-end;
+    line-height: 2.5;
+}
+.navbar {
+    position: fixed;
+    flex-direction: column;
+}
+/* 
+Feature Projects Styles 
+-----------------------------------------------------
+*/
+main {
+    grid-column: 2/3;
+}
+
+/* 
+Work Experience Styles 
+-----------------------------------------------------
+*/
+
+/* 
+Education Styles 
+-----------------------------------------------------
+*/
+
+/* 
+Certification & Skills Styles 
+-----------------------------------------------------
+*/
+
+/* 
+Information Styles 
+-----------------------------------------------------
+*/
+.information {
+    grid-column: 3/4;
+}
+
+.info-list {
+    flex-direction: column;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    width: 50px;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+}
+
+
+
+/* 
+Footer Styles 
+-----------------------------------------------------
+*/
+footer {
+    grid-column: 1/4;
+}
