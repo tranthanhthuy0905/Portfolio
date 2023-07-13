@@ -1,19 +1,19 @@
 @font-face {
     font-family: Caveat;
-    src: url(/src/Caveat/Caveat-VariableFont_wght.ttf);
+    src: url(../src/Caveat/Caveat-VariableFont_wght.ttf);
 }    
 @font-face {
     font-family: Montserrat;
-    src: url(/src/Montserrat-VariableFont_wght.ttf);
+    src: url(../src/Montserrat-VariableFont_wght.ttf);
 } 
 @font-face {
     font-family: Wisdom;
     size-adjust: 150%;
-    src: url(/src/WisdomVacation.ttf);
+    src: url(../src/WisdomVacation.ttf);
 }
 @font-face {
     font-family: Spring;
-    src: url(/src/Springlake.ttf);  
+    src: url(../src/Springlake.ttf);  
 }
 
 /* 
@@ -50,13 +50,13 @@ h2 {
     font-weight: 400;
     font-size: 50px;
     font-style: italic;
-    font-family: "Spring", "Caveat", cursive;
+    font-family: "Spring", cursive;
     margin: 0;
 }
 
 h3 {
-    font-family: cursive;
-    font-size: 25px;
+    font-family: "Caveat";
+    font-size: 30px;
 }
 
 img {
